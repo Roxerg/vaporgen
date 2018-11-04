@@ -56,7 +56,7 @@ def makeimg(path):
 
     kay = random.randint(3, 5)
     phrase = ''.join(random.sample(population=charlist, k=kay))
-    fnt = ImageFont.truetype(random.choice(fonts), width/7)
+    fnt = ImageFont.truetype(random.choice(fonts), int(width/7))
 
 
     """
@@ -68,7 +68,7 @@ def makeimg(path):
 
         im.paste(foreground, (0, 0), foreground)
 
-    """ 
+    """
     d = ImageDraw.Draw(im)
     d.text(((width)/5, (height)/3), phrase, font=fnt, fill=random.choice(fills))
 
@@ -76,7 +76,7 @@ def makeimg(path):
 
     for i in range(0, random.randint(2, 9)):
         if (height < width):
-            wi = width 
+            wi = width
             hi = height
         else:
             wi = height

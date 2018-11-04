@@ -1,0 +1,88 @@
+
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+.flexcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.flexelement {
+  border-style: solid;
+  border-width: 5px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt {
+  margin-left:10px;
+  color: #42f4f4;
+  line-height: 20px;
+}
+
+.txt1 {
+  margin-left:2px;
+  color: #42f4f4;
+  line-height: 20px;
+}
+
+.terminal {
+  position: absolute;
+  left: 39%;
+  top: 20%;
+  z-index: 1;
+  display:block;
+}
+.terminal_border {
+  height: 400px;
+  width: 400px;
+  border-style: solid;
+  border-color: #42f4f4;
+  border-width: 2px;
+  position: absolute
+}
+.terminal_top {
+  height: 30px;
+  width: 400px;
+  border-style: solid;
+  border-color: #42f4f4;
+  border-width: 2px;
+  position: absolute;
+  color: #42f4f4;
+  text-align: center;
+  line-height: 30px;
+}
+
+.crossed {
+    height: 30px;
+    width: 30px;
+    margin-left: 370px;
+    border-style: solid;
+    border-color: #42f4f4;
+    border-width: 2px;
+    background:
+       linear-gradient(to top left,
+           rgba(66, 244, 244,0) 0%,
+           rgba(66, 244, 244,0) calc(50% - 0.8px),
+           rgba(66, 244, 244,1) 50%,
+           rgba(66, 244, 244,0) calc(50% + 0.8px),
+           rgba(66, 244, 244,0) 100%),
+       linear-gradient(to top right,
+           rgba(0,0,0,0) 0%,
+           rgba(0,0,0,0) calc(50% - 0.8px),
+           rgba(66, 244, 244,1) 50%,
+           rgba(0,0,0,0) calc(50% + 0.8px),
+           rgba(0,0,0,0) 100%);
+}
+
+.img {
+  position: relative;
+  z-index: -1;
+}

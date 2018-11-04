@@ -1,0 +1,104 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style/style.css">
+ <meta charset="UTF-8">
+
+</head>
+
+
+<body>
+
+
+
+<div class="flexcontainer">
+<div class="flexelement">
+  <div class="terminal">
+    <div class="terminal_border"><br><br>
+      <div class="txt">
+        <table style="width:100%" class="txt1">
+          <tr>
+            <th style="align:left">Filesystem</th>
+            <th style="align:left">Used</th>
+            <th style="align:left">Available</th>
+            <th style="align:left">Use%</th>
+          </tr>
+          <tr>
+            <td>/dev/md0</td>
+            <td>207380</td>
+            <td>5263352</td>
+            <td style="align:right">4%</td>
+          </tr>
+          <tr>
+            <td>/dev/md1</td>
+            <td>13722288</td>
+            <td>61093296</td>
+            <td style="align:right">19%</td>
+          </tr>
+          <tr>
+            <td>/dev/md4</td>
+            <td>4309572</td>
+            <td>17589056</td>
+            <td style="align:right">20%</td>
+          </tr>
+        </table>
+
+        user<b>@</b>ej☹8d❤:
+        <br>
+        user<b>@</b>ej☹8d❤:
+        <br>
+        user<b>@</b>ej☹8d❤:
+        <br>
+        user<b>@</b>ej☹8d❤:
+        <br>
+        user<b>@</b>ej☹8d❤:
+        <br>
+        user<b>@</b>ej☹8d❤:
+      </div>
+    </div>
+    <div class="terminal_top"><div id="glitch">YOU ARE LOVED 他媽的疼痛了</div></div>
+    <div class="crossed"></div>
+  </div>
+  <img class="img" src="style/img/aesthetic-monitor.png" alt="monitor">
+</div>
+<!-- <div class="flexelement"><img src="style/img/kb.png" alt="keyboard"></div> -->
+</div>
+
+
+</body>
+
+<script>
+
+
+var myVar = setInterval(myTimer, 1);
+
+var isNone = false;
+function myTimer() {
+  if(isNone) {
+    isNone = false;
+    document.getElementById('glitch').style.display = "block";
+  }
+  else {
+    isNone = true;
+    document.getElementById('glitch').style.display = "none";
+  }
+
+}
+
+var canvas = document.getElementById("myCanvas");
+//var width = document.getElementById("terminal").width;
+//console.log(width);
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#42f4f4";
+ctx.strokeStyle = "#42f4f4";
+ctx.moveTo(0, 20)
+ctx.lineTo(7000, 20);
+ctx.stroke();
+
+</script>
+
+
+
+
+
+</html>
