@@ -34,8 +34,8 @@ html {
 }
 
 .terminal {
-  position: absolute;
-  left: 39%;
+  position: relative;
+  left: 30%;
   top: 20%;
   z-index: 1;
   display:block;
