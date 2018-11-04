@@ -10,6 +10,14 @@
 <body>
 
 
+<!--
+TODO:
+* if adding more than one line, make space check and if needed put everything on cleared screen
+* make text "scroll": delete oldest line
+* make files trigger stuff
+-->
+
+
 
 <div class="flexcontainer">
 <div class="flexelement">
@@ -124,9 +132,13 @@ document.onkeydown = function(evt) {
         document.getElementById("txt").innerHTML = previoustxt + "user<b>@</b>ej☹8d❤:<wbr id=\"__line__\">";
         document.getElementById("input").innerHTML = "";
       }
+      else if(previous == "ls") {
+        document.getElementById("txt").innerHTML = previoustxt.substring(0, previoustxt.length-4) + previous
+            + "<br><span class=\"filename\">vaporwaverize</span><wbr id=\"__line__\"><br><span class=\"filename\">readme.txt</span><wbr id=\"__line__\"><br><span class=\"filename\">site.html</span><wbr id=\"__line__\"><br>user<b>@</b>ej☹8d❤:<wbr id=\"__line__\">";
+        document.getElementById("input").innerHTML = "";
+      }
       else {
-
-        document.getElementById("txt").innerHTML = previoustxt +"what did you just say about my mother?<wbr id=\"__line__\">" + "<br>user<b>@</b>ej☹8d❤:<wbr id=\"__line__\">";
+        document.getElementById("txt").innerHTML = previoustxt.substring(0, previoustxt.length-4) + previous + "<br>ERROR: UNRECOGNIZED COMMAND<wbr id=\"__line__\">" + "<br>user<b>@</b>ej☹8d❤:<wbr id=\"__line__\">";
         document.getElementById("input").innerHTML = "";
       }
     }

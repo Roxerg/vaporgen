@@ -61,6 +61,7 @@ html {
   line-height: 30px;
 }
 
+
 .crossed {
     height: 30px;
     width: 30px;
@@ -81,6 +82,10 @@ html {
            rgba(66, 244, 244,1) 50%,
            rgba(0,0,0,0) calc(50% + 0.8px),
            rgba(0,0,0,0) 100%);
+}
+
+.filename {
+  color: #f442df;
 }
 
 .img {
