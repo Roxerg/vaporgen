@@ -1,6 +1,7 @@
 
 html {
   font-family: "Courier New", Courier, monospace;
+  background: white;
 }
 
 
@@ -35,7 +36,7 @@ html {
 
 .terminal {
   position: relative;
-  left: 30%;
+  left: 29%;
   top: 20%;
   z-index: 1;
   display:block;
