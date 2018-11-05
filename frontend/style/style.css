@@ -11,6 +11,7 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
+  flex-shrink: initial;
 
 }
 
@@ -36,8 +37,9 @@ html {
 
 .terminal {
   position: relative;
+  top: 230px;
   left: 29%;
-  top: 20%;
+  
   z-index: 1;
   display:block;
 }
