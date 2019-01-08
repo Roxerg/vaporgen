@@ -8,6 +8,9 @@ var isNone = false;
 
 document.onkeydown = function(evt) {
     evt = evt || window.event;
+
+
+
     if (evt.keyCode == 8) {
       var previous = document.getElementById("input").innerHTML;
       document.getElementById("input").innerHTML = previous.substring(0, previous.length - 1)
@@ -27,9 +30,19 @@ document.onkeydown = function(evt) {
     }
     else if(evt.keyCode == 13) { //ENTER {
       var temp = document.getElementById("txt").innerHTML;
+      console.log(temp);
       var count = (temp.match(/__line__/g) || []).length;
-      if (count > 15) {
-        document.getElementById("txt").innerHTML = "";
+
+      
+
+      if (count >= 15) {
+        //document.getElementById("txt").innerHTML = "";
+        var pre = document.getElementById("txt").innerHTML;
+        var z = pre.substring(pre.indexOf("__line__")+10);
+        document.getElementById("txt").innerHTML = z;
+        //console.log(z);
+        //console.log(count);
+        //count--;
       }
       //else if (count > 10 && first) {
       //  first = false;
