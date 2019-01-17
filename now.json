@@ -1,4 +1,12 @@
 {
     "version": 2,
-    "alias": "vapor.rokasg.tech"
+    "alias": "vapor.rokasg.tech",
+    "name": "vapor",
+    "builds": [
+        { "src": "index.py", "use": "@liudonghua123/now-flask" }
+    ],
+    "routes": [
+        { "src": "/.*", "dest": "/"}
+    ]
+
 }
