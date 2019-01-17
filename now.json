@@ -1,9 +1,8 @@
 {
     "version": 2,
-    "alias": "vapor.rokasg.tech",
-    "name": "vapor",
+    "name": "test",
     "builds": [
-        { "src": "index.py", "use": "@liudonghua123/now-flask" }
+        { "src": "*.py", "use": "@liudonghua123/now-flask",  "config": { "maxLambdaSize": "30mb" } }
     ],
     "routes": [
         { "src": "/.*", "dest": "/"}

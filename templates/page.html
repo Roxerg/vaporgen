@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
 
  <meta charset="UTF-8">
 
@@ -32,7 +32,7 @@ TODO:
       <div class="terminal_top" style="text-align:justify;text-align-last:center"><div id="glitch">YOU ARE LOVED 他媽的疼痛了</div></div>
       <div class="crossed"></div>
     </div>
-    <img class="img" src="style/img/aesthetic-monitor.png" alt="monitor">
+    <img class="img" src="{{url_for('static', filename='aesthetic-monitor.png')}}" alt="monitor">
 </div>
 <!-- <div class="flexelement"><img src="style/img/kb.png" alt="keyboard"></div> -->
 </div>
@@ -40,8 +40,8 @@ TODO:
 
 </body>
 
-  <script src="main.js"></script> 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+  <script src="{{url_for('static', filename='main.js')}}"></script> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
 
 </script>

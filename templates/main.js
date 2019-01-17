@@ -22,8 +22,8 @@ document.getElementById("txt").innerHTML = "";
       document.getElementById("txt").innerHTML = prevz + element;
     });
 
-//document.getElementByClassName("img").addEventListener('touchstart', pull_up_keyboard, false);
-//document.getElementByClassName("img").addEventListener('click', pull_up_keyboard, false);
+document.getElementByClassName("img").addEventListener('touchstart', pull_up_keyboard, false);
+document.getElementByClassName("img").addEventListener('click', pull_up_keyboard, false);
 
 function pull_up_keyboard() {
   prompt();
